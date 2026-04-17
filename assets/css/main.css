@@ -107,7 +107,69 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #222529;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	/* GRID layout */
+	.career-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* 3 per row */
+		gap: 30px;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 2fr); /* 3 per row */
+		gap: 30px;
+	}
+
+	.contact-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); /* 3 per row */
+		gap: 10px;
+	}
+
+	.contact-grid .card {
+		border: 0px;
+		margin-left: 5em;
+		color: #222529;
+		background: transparent;
+		font-size: 0.9em;
+		max-height: 5em;
+		box-shadow: 0 0 0px;
+	}
+
+	/* CARD styling */
+	.card {
+		padding: 20px;
+		border: 1px solid #000000;
+		color: #222529;
+		background: transparent;
+		font-size: 0.9em;
+		text-align: left;
+		max-height: 10em;
+	
+	/* glow effect */
+		box-shadow: 0 0 2px #000000;
+	}
+
+	.card h3 {
+		color: #000000;
+		margin-bottom: 1px;
+		font-size: 1.1em;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	.card span {
+		color: #000000;
+		font-size: 0.8em;
+		text-align: left;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -209,8 +271,6 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
-
-
 
 /* Container */
 
@@ -1756,6 +1816,12 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.avatar16 {
+			width: 16px;
+			height: 16px;
+			background: #f00;
+		}
+
 		.image.avatar48 {
 			width: 70px;
 			height: 60px;
@@ -2240,7 +2306,7 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 5em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -2395,6 +2461,7 @@ input, select, textarea {
 
 			header br {
 				display: none;
+				margin-bottom: 10px;
 			}
 
 			.container {
